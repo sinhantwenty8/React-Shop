@@ -1,0 +1,22 @@
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.form{
+    background-color: rgb(255, 255, 255);
+    border: rgb(207, 198, 198) 1px solid;
+    border-radius: 4px;
+    padding: 40px 45px;
+}
+
+.form p{
+    text-align: center;
+    margin-top: 4px;
+    font-size: 13px;
+    color: gray;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.sticky{
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    margin-bottom: 70px;
+    background-image: linear-gradient(to right, rgb(97, 127, 209) , rgb(126, 173, 226)) !important;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    margin-left: 800px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.con{
+    width: 100vw;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 23px;
+    color: white !important;
+    font-family: 'Inter', sans-serif;
+}
+
+img{
+    width: 30px;
+    margin-left: 4px;
+}
+
+.badge{
+    text-align: center;
+    align-items: center;
+    font-size: 10px;
+    height: 25px;
+    padding-top: 7px;
+    width: 25px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: white!important;
+    color: blue!important;
+}
+
+.cart{
+    cursor: pointer;
+}
+
+
+.cart:hover img{
+    filter: brightness(70%);
+}
+
+.cart:hover .badge{
+    color: black !important;
+    background-color: rgb(184, 184, 184) !important;
+}
+
+.link{
+    margin: 3px 20px;
+    color: white !important;
+    text-decoration: none;
+    color: gray;
+}
+
+.link:hover{
+    border-bottom: 2px solid rgb(78, 75, 75);
+}

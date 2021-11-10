@@ -1,0 +1,19 @@
+.notificationCon{
+    position: fixed;
+    background-image: linear-gradient(to right, rgb(120, 228, 177) , rgb(193, 236, 202)) !important;
+    bottom: 0;
+    padding: 12px 0px;
+    width: 100vw !important;
+}
+
+.message{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.none{
+    display: none;
+}

@@ -1,0 +1,27 @@
+.con{
+    margin: 30px 70px;
+    width: 100vw;
+    border: 2px rgb(218, 217, 217) solid;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img{
+    width: 80px;
+    margin-right: 100px;
+}
+
+.h5{
+    margin-top: 35px;
+}
+
+.but{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
