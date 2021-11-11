@@ -5,13 +5,11 @@ import { auth } from '../Auth/firebase';
 
 export const AuthContext = React.createContext({
     currentUser : null,
-    shop : null,
     userIsLoggedIn : false,
     signUp :()=>{},
     signIn :()=>{},
     logOut :()=>{},
 })
-
 
 export const useAuth = function(){
     return useContext(AuthContext)
@@ -19,7 +17,6 @@ export const useAuth = function(){
 
 export function AuthProvider(props) {
     const [currentUser,setCurrentUser] = useState(null)
-    const [shop,setShopItem] = useState(null)
     const [data,setData] = useState(localStorage.getItem('user'))
 
     useEffect(()=>{
@@ -27,21 +24,6 @@ export function AuthProvider(props) {
             setCurrentUser(data)
         }
     },[data])
-
-    useEffect(() => {
-        const fetchItem = async function(){
-            try{
-                let response = await fetch('https://fakestoreapi.com/products')
-                let data = await response.json()
-                setShopItem(data)
-                console.log(data)
-                return data
-            }catch(error){
-                console.log(error)
-            }
-        }
-        fetchItem()
-    }, [])
     
     const signUp = async function(email,password){
         return createUserWithEmailAndPassword(auth, email, password)
@@ -90,7 +72,6 @@ export function AuthProvider(props) {
 
     const context ={
         currentUser,
-        shop,
         signUp,
         signIn,
         logOut,

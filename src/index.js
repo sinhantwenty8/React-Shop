@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { AuthProvider } from './AuthContext/AuthContext';
+import { AuthProvider } from './Context/AuthContext';
 import {BrowserRouter} from 'react-router-dom';
-import { CartProvider } from './CartContext/CartContext';
+import { CartProvider } from './Context/CartContext';
 import {NotificationContextProvider} from './Notification/NotificationContext'
+import { ShopProvider } from './Context/ShopContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ShopProvider>
     <AuthProvider>
     <NotificationContextProvider>
     <CartProvider>
@@ -18,6 +20,7 @@ ReactDOM.render(
     </CartProvider>
     </NotificationContextProvider>
     </AuthProvider>
+    </ShopProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

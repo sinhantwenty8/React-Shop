@@ -1,17 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SignUpForm from './SignUp/SignUpForm';
-import SignInForm from './SignIn/SignInForm';
+import SignInForm from './AccountActivity/SignIn/SignInForm';
+import SignUpForm from './AccountActivity/SignUp/SignUpForm';
 import {Route,Switch} from 'react-router-dom'
 import Header from './Header/Header';
-import { useAuth } from './AuthContext/AuthContext';
-import Dashboard from './dashboard/Dashboard';
+import Dashboard from './Dashboard/Dashboard';
 import { Redirect } from 'react-router';
-import ItemDetail from './ItemDetail/ItemDetail';
+import ItemDetail from './Shop/ItemDetail/ItemDetail';
 import style from'./App.module.css'
 import Cart from './Cart/Cart';
 import Notification from './Notification/Notification';
 import { useNotification } from './Notification/NotificationContext';
 import SearchBar from './Search Bar/SearchBar';
+import { useAuth } from './Context/AuthContext';
 
 
 function App() {

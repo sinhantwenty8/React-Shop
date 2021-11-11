@@ -1,9 +1,10 @@
 import React from 'react'
-import { useAuth } from '../AuthContext/AuthContext'
 import {Form,Button,Container,Alert,ModalTitle} from 'react-bootstrap'
 import style from './SignInForm.module.css'
 import { useState,useRef } from 'react'
 import { useHistory } from 'react-router'
+import { useAuth } from '../../Context/AuthContext'
+
 
 export default function SignInForm() {
     const emailRef = useRef("")

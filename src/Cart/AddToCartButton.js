@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './AddToCartButton.module.css'
 import { Form } from 'react-bootstrap'
-import { useCart } from '../CartContext/CartContext';
+import { useCart } from '../Context/CartContext'
 
 export default function AddToCartButton(props) {
     const {addToCart,removeFromCart} = useCart()

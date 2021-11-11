@@ -7,11 +7,12 @@
 }
 
 .input{
-    width: 45px !important;
+    width: 42px !important;
     display: inline;
     margin-left: 12px;
     border-radius: 10px;
-
+    background-color: white !important;
+    border-color: gray;
 }
 
 .button img{

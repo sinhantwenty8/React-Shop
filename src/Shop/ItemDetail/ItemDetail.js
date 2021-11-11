@@ -1,8 +1,9 @@
 import React from 'react'
 import { useParams } from 'react-router'
-import { useAuth } from '../AuthContext/AuthContext'
 import { useEffect ,useState} from 'react'
 import style from './ItemDetail.module.css'
+import { useAuth } from '../../Context/AuthContext'
+
 
 export default function ItemDetail() {
     const {shop,currentUser} = useAuth()

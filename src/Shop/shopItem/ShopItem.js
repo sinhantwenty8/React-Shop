@@ -2,8 +2,8 @@ import React from 'react'
 import {Container,Button} from 'react-bootstrap'
 import style from "./ShopItem.module.css"
 import {Link} from 'react-router-dom'
-import { useCart} from '../CartContext/CartContext'
-import { useNotification } from '../Notification/NotificationContext'
+import { useNotification } from '../../Notification/NotificationContext'
+import { useCart } from '../../Context/CartContext'
 
 
 export default function ShopItem(props) {

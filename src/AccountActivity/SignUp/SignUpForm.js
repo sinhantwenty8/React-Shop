@@ -2,14 +2,15 @@ import React from 'react'
 import {Form,Button,Container,Alert,ModalTitle} from 'react-bootstrap'
 import style from './SignUpForm.module.css'
 import { useState,useRef } from 'react'
-import { useAuth } from '../AuthContext/AuthContext'
 import { useHistory } from 'react-router'
+import { useAuth} from '../../Context/AuthContext'
+
 
 export default function SignUpForm() {
     const [isError,setError] = useState(null)
     const passwordRef = useRef("")
     const passwordConfirmRef = useRef("")
-    const emailRef = useRef("")
+    const emailRef = useRef('')
     const {signUp} = useAuth()
     const history = useHistory()
 

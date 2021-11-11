@@ -1,5 +1,5 @@
 .searchBarCon{
-    padding-top: 135px;
+    margin-top: 155px;
     padding-bottom: 0px;
     display: flex;
     justify-content: center;
@@ -13,10 +13,15 @@
 }
 
 .button{
-    width: 60px;
-    background-color: rgb(140, 140, 207);
+    width: 40px;
+    background-color: white;
     color: white;
-    border-radius: 5px;
-    border: 0px;
-    margin-left: 10px;
+    margin-left: 4px;
+    border: none;
+}
+
+img{
+    width: 25px ;
+    height: 25px;
+    margin-right:5px ;
 }

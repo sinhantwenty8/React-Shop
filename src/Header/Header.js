@@ -1,9 +1,10 @@
 import React from 'react'
 import {Navbar,Nav,Container, Badge} from 'react-bootstrap'
-import { useAuth } from '../AuthContext/AuthContext'
 import style from './Header.module.css'
 import { NavLink } from 'react-router-dom'
-import { useCart } from '../CartContext/CartContext'
+import { useCart } from '../Context/CartContext'
+import { useAuth } from '../Context/AuthContext'
+
 
 export default function Header() {
     const {amountOfItem} = useCart()
